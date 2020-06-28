@@ -10,7 +10,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="js/validate.js"></script>
 
+  <script type="text/javascript" src="js/validate2.js"></script>
 </head>
 <body>
 	<div class="container-fluid main-section">
@@ -38,46 +41,49 @@
 <div class="tab-content">
 	<div class="tab-pane active" id="tabs-1" role="tabpanel">
 		<h3 class="register-heading">From Address</h3>
+			<form id="myform" method="post">
+				
+			
                                 <div class="row register-form">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" id="FNM" />
+                                            <input type="text" class="form-control" placeholder="First Name *" id="FNM" name="field1" />
                                         </div>
                                         <div class="form-group">
-                                             <input type="text" minlength="10" maxlength="10" name="fromPhone" class="form-control" placeholder="Phone Number *" id="PNF" />
+                                             <input type="text" minlength="10" maxlength="10" class="form-control" placeholder="Phone Number *" id="PNF" name="field2"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Land Mark" id="LMF" />
+                                            <input type="text" class="form-control" placeholder="Land Mark" id="LMF" name="field3"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control"  placeholder="Country *" id="CF" />
+                                            <input type="text" class="form-control"  placeholder="Country *" id="CF" name="field4"/>
                                         </div>
                                        
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Last Name *" id="LNF" />
+                                            <input type="email" class="form-control" placeholder="Last Name *" id="LNF" name="field5"/>
                                         </div>
                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Address Line 1 *" id="ALF" />
+                                            <input type="text" class="form-control" placeholder="Address Line 1 *" id="ALF" name="field6"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="State *" id="STF" />
+                                            <input type="text" class="form-control" placeholder="State *" id="STF" name="field7"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Pin Code *" id="PCF" />
+                                            <input type="text" class="form-control" placeholder="Pin Code *" id="PCF" name="field8"/>
                                         </div>
                                  
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email Address *" id="EF" />
+                                            <input type="email" class="form-control" placeholder="Email Address *" id="EF" name="field9"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Address Line 2 (optional)" id="" />
+                                            <input type="text" class="form-control" placeholder="Address Line 2 (optional)" id="" name="field11"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="City *" id="CF" />
+                                            <input type="text" class="form-control" placeholder="City *" id="CFCF" name="field10 "/>
                                         </div>
                                         <div class="form-group">
                                            
@@ -92,49 +98,51 @@
                                         	
 
                                         </div>
+                                        </form>
 	</div>
 	<div class="tab-pane" id="tabs-2" role="tabpanel">
 		   <h3  class="register-heading">To Address</h3>
+		   <form id="myform1" method="post">
                                  <div class="row register-form">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" id="FNM" />
+                                            <input type="text" class="form-control" placeholder="First Name *" id="FNM" name="field21" />
                                         </div>
                                         <div class="form-group">
-                                             <input type="text" minlength="10" maxlength="10" name="fromPhone" class="form-control" placeholder="Phone Number *" id="PNF" />
+                                             <input type="text" minlength="10" maxlength="10" class="form-control" placeholder="Phone Number *" id="PNF" name="field22"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Land Mark" id="LMF" />
+                                            <input type="text" class="form-control" placeholder="Land Mark" id="LMF" name="field23"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control"  placeholder="Country *" id="CF" />
+                                            <input type="text" class="form-control"  placeholder="Country *" id="CF" name="field24"/>
                                         </div>
                                        
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Last Name *" id="LNF" />
+                                            <input type="email" class="form-control" placeholder="Last Name *" id="LNF" name="field25"/>
                                         </div>
                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Address Line 1 *" id="ALF" />
+                                            <input type="text" class="form-control" placeholder="Address Line 1 *" id="ALF" name="field26"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="State *" id="STF" />
+                                            <input type="text" class="form-control" placeholder="State *" id="STF" name="field27"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Pin Code *" id="PCF" />
+                                            <input type="text" class="form-control" placeholder="Pin Code *" id="PCF" name="field28"/>
                                         </div>
                                  
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email Address *" id="EF" />
+                                            <input type="email" class="form-control" placeholder="Email Address *" id="EF" name="field29"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Address Line 2 (optional)" id="" />
+                                            <input type="text" class="form-control" placeholder="Address Line 2 (optional)" id="" name="field30"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="City *" id="CF" />
+                                            <input type="text" class="form-control" placeholder="City *" id="CFC" name="field31"/>
                                         </div>
                                         <div class="form-group">
                                            
@@ -157,130 +165,11 @@
                                         	
 
                                         </div>
+                                        </form>
 	</div>
 
 </div>
 
-
-                                <!-- <h3 class="register-heading">From Address</h3>
-                                <div class="row register-form">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" id="FNM" />
-                                        </div>
-                                        <div class="form-group">
-                                             <input type="text" minlength="10" maxlength="10" name="fromPhone" class="form-control" placeholder="Phone Number *" id="PNF" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Land Mark" id="LMF" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control"  placeholder="Country *" id="CF" />
-                                        </div>
-                                       
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Last Name *" id="LNF" />
-                                        </div>
-                                       <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Address Line 1 *" id="ALF" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="State *" id="STF" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Pin Code *" id="PCF" />
-                                        </div>
-                                 
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email Address *" id="EF" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Address Line 2 (optional)" id="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="City *" id="CF" />
-                                        </div>
-                                        <div class="form-group">
-                                           
-                                        </div>
-                                 
-                                    </div>
-                                </div>
-                                <div class="row">
-                                        	<div class="float-right">
-                                        		<input type="submit" class="btn btn-primary btnRegister"  value="Register"/>
-                                        	</div>
-                                        	
-
-                                        </div> -->
-                           
-                                <!-- <h3  class="register-heading">To Address</h3>
-                                 <div class="row register-form">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" id="FNM" />
-                                        </div>
-                                        <div class="form-group">
-                                             <input type="text" minlength="10" maxlength="10" name="fromPhone" class="form-control" placeholder="Phone Number *" id="PNF" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Land Mark" id="LMF" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control"  placeholder="Country *" id="CF" />
-                                        </div>
-                                       
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Last Name *" id="LNF" />
-                                        </div>
-                                       <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Address Line 1 *" id="ALF" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="State *" id="STF" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Pin Code *" id="PCF" />
-                                        </div>
-                                 
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email Address *" id="EF" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Address Line 2 (optional)" id="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="City *" id="CF" />
-                                        </div>
-                                        <div class="form-group">
-                                           
-                                        </div>
-                                 
-                                    </div>
-                                </div> -->
-                               <!--  <div>
-                                	   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d103187.6808383091!2d77.63355785905887!3d12.987074075317235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1593358825276!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                </div> -->
-                             
-
-
-
-
-                               <!--  <div class="row">
-                                        	<div class="float-right">
-                                        		<input type="submit" class="btn btn-primary btnRegister"  value="Register"/>
-                                        	</div>
-                                        	
-
-                                        </div> -->
                             </div>
                         
 			
@@ -292,4 +181,50 @@
 </html>
 
 
+<!-- <script type="text/javascript">
+	$(document).ready(function() {
+  $("#basic-form").validate();
+   rules: {
+      name : {
+        required: true,
+        minlength: 3
+      },
+      name2: {
+        required: true,
+        number: true,
+        min: 18
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      weight: {
+        required: {
+          depends: function(elem) {
+            return $("#age").val() > 50
+          }
+        },
+        number: true,
+        min: 0
+      }
+    },
+    messages : {
+      name: {
+        minlength: "Name should be at least 3 characters"
+      },
+      age: {
+        required: "Please enter your age",
+        number: "Please enter your age as a numerical value",
+        min: "You must be at least 18 years old"
+      },
+      email: {
+        email: "The email should be in the format: abc@domain.tld"
+      },
+      weight: {
+        required: "People with age over 50 have to enter their weight",
+        number: "Please enter your weight as a numerical value"
+      }
+    }
+  });
 
+</script> -->

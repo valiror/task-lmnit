@@ -76,6 +76,9 @@ body{
     width: auto;
     font-size: 12px;
 }
+.btnRegister:hover{
+	background-color: #92484f !important;
+}
 .register-heading{
     text-align: left;
 
